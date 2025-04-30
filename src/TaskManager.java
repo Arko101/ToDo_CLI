@@ -1,13 +1,15 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class TaskManager {
     ArrayList<String> task = new ArrayList<String>();
 
     public void listTask() {
-        for (int i = 0; i < task.size(); i++) {
-            System.out.println(task.get(i));
-        }
+        boolean result = task.isEmpty();
+        if (result == true) {
+            System.out.println("No task has been added");
+        } else
+            System.out.println(task);
+
     }
 
     public void addTask(String a) {

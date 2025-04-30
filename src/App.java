@@ -27,11 +27,13 @@ public class App {
                 case 2:
                     System.out.println("How many tasks do you want to add");
                     int n = sc.nextInt();
+                    sc.nextLine(); // swllows next line -> Works correctly
                     for (int i = 1; i <= n; i++) {
                         System.out.println("Enter a new Task");
-                        sc.nextLine();
+                        // sc.nextLine(); -> These doesnot work
                         String str = sc.nextLine();
                         todo.addTask(str);
+                        // sc.nextLine(); -> These doesnot work
                     }
                     break;
                 case 3:
