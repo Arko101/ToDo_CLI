@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class TaskManager {
     ArrayList<String> task = new ArrayList<String>();
@@ -11,6 +12,13 @@ public class TaskManager {
 
     public void addTask(String a) {
 
+        /*
+         * System.out.println("How many tasks do you want to add");
+         * Scanner sc = new Scanner(System.in);
+         * int n = sc.nextInt();
+         * for (int i = 1; i <= n; i++) {
+         * System.out.println("Enter a task");
+         */
         task.add(a);
 
     }
@@ -23,7 +31,7 @@ public class TaskManager {
         task.set(i, task.get(i) + " is done");
     }
 
-    public ArrayList<String> getTasks() { //
+    public ArrayList<String> getTasks() { // List<String> getTask() -> this is supposed to work better, find out.
         return task;
     }
 
