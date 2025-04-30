@@ -12,13 +12,6 @@ public class TaskManager {
 
     public void addTask(String a) {
 
-        /*
-         * System.out.println("How many tasks do you want to add");
-         * Scanner sc = new Scanner(System.in);
-         * int n = sc.nextInt();
-         * for (int i = 1; i <= n; i++) {
-         * System.out.println("Enter a task");
-         */
         task.add(a);
 
     }
